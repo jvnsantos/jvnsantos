@@ -1,0 +1,33 @@
+[user]
+	name = Joao Caiçara
+	email = ############
+	
+[core]
+	editor = code --wait
+
+[push]
+	followTags = true
+
+[alias]
+	# Adiciona tudo e ja commita 
+	c = !git add --all && git commit -m
+
+	# Custom log
+	l = !git log --pretty=format:'%C(blue)%h%C(red)%d %C(white)%s - %C(cyan)%cn, %C(green)%cr' 
+	
+	# Status reduzido
+	s = !git status -s
+	
+	# Permite juntar um commit no commit anterior
+	amend = !git add --all && git commit --amend --no-edit 
+
+	# Traz as estastisticas de commits (feat, chore, test, fix, etc....)
+	count = !git shortlog -s --grep
+
+# %H = hash do commit 
+# %h = hash do commit reduzido
+# %s = Subject do commit (Nome do commit)
+# %cn = nome de quem fez o commit
+# %cn = data relativa (ex: 15 minutes ago)
+# %C() = define a cor
+
