@@ -31,3 +31,6 @@
 # %cn = data relativa (ex: 15 minutes ago)
 # %C() = define a cor
 
+# para configurar `git config --global --edit` vai abrir no VIM
+# para configurar no code: git config --global core.editor code
+
